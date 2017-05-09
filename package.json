@@ -1,0 +1,10 @@
+{
+  "name": "fetch-json-simple",
+  "version": "0.0.0",
+  "description": "Configurable fetch wrapper for retrieving JSON",
+  "main": "index.js",
+  "repository": "laggingreflex/fetch-json-simple",
+  "dependencies": {
+    "merge": "^1.2.0"
+  }
+}
