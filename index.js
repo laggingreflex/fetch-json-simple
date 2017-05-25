@@ -18,6 +18,7 @@ const defaultOpts = {
 function fetchJsonSimple(pathArg, optsArg) {
   const host = fetchJsonSimple.host || ''
   const path = host + pathArg
+  optsArg = optsArg || {};
 
   const fetch = fetchJsonSimple.fetch || defaultFetch;
 
