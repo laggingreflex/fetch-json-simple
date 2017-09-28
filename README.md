@@ -41,19 +41,18 @@ npm install fetch-json-simple --save
 ### Example
 
 ```js
-fetch(/data-path)
+fetch('/data-path')
   .then(json => {
-    if (json.error) {
-      ...
+    if (json.body) {
+      // text body
     } else {
-      ...
+      // json
     }
-  }) // no catch - it doesn't throw (*always* fetches json)
+  }).catch(error => {
+
+  })
 ```
-or
-```js
-const {error, ...data} = await fetch('...');
-```
+
 ### API
 
 ```js
