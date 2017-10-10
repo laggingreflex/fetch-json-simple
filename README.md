@@ -15,7 +15,7 @@ Main features:
   ```
 * Stringifies request `{ body }` (but can also handle already stringified body)
 * Text responses converted to JSON `{ body }`
-* Options are **[merge]d** rather than [assign]ed. (also this is the **only** dependency)
+* Options are **[merge]d** rather than [assign]ed.
 * Auto-specifies `{method: 'post'}` if omitted and a body was passed
 * Shortcut methods: `fetch.get`, `fetch.post`, `fetch.put`, ...
 
@@ -82,7 +82,7 @@ fetch(path, options)
     )
   ```
 
-[merge]: http://npmjs.com/merge
+[merge]: https://github.com/schnittstabil/merge-options
 [assign]: https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/assign
 
 #### Shortcut Methods

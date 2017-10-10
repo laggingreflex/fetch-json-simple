@@ -1,4 +1,4 @@
-const merge = require('merge');
+const merge = require('merge-options');
 
 module.exports = fetchJsonSimple;
 
@@ -37,7 +37,7 @@ function fetchJsonSimple(pathArg, optsArg) {
     }
   }
 
-  const opts = merge({},
+  const opts = merge(
     optsArg.method ? {} : { method: body ? 'post' : 'get' },
     defaultOpts,
     fetchJsonSimple.options,
